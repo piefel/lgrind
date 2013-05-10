@@ -10,9 +10,8 @@ DOCDIR=$(BASEDIR)/doc/lgrind
 
 INSTALL=install
 SOURCES=lgrind.c lgutil.c regexp.c regexp.h lgrindef.c lgrindef.h retest.c v2lg.c
-TEXFILES=lgrind.dtx lgrind.sty lgrind.ins
 
-VERSION=3.66
+VERSION=3.68
 DISTVERSION=lgrind-$(VERSION)
 
 .PHONY:	all install clean distribution lgrind

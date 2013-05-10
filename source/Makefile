@@ -3,7 +3,7 @@
 # $Id: Makefile,v 1.4 1999/12/18 21:54:29 mike Exp $
 
 BINDIR=$(BASEDIR)/bin
-MANDIR=$(BASEDIR)/man
+MANDIR=$(BASEDIR)/share/man
 
 CC=gcc
 MANPAGES1=lgrind.1
