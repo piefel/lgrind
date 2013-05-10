@@ -13,8 +13,7 @@ static char rcsid[] =
 
 /* Copyright %%\copyright%% 1998,1999 Michael Piefel
  *
- * This file is something like GPL, though LGrind is BSD.
- * I don't want to become a lawyer.
+ * This file is licensed under the 3-clause BSD license.
  */
 
 /*
@@ -304,6 +303,8 @@ varsubst *parsevartab(char* fname)
 
 /*
  * Replaces a variable by alternate representation
+ * in: ident - pointer to non-terminated string
+ * in: i - length of ident
  */
 int substvarname(char **ident, int i)
 {
@@ -311,7 +312,8 @@ int substvarname(char **ident, int i)
 
 	while (substlistpos!=NULL)
 	{
-		if (re_strncmp(*ident, substlistpos->var, i)==0)
+		if (re_strncmp(*ident, substlistpos->var, i)==0 &&
+			i == strlen(substlistpos->var))
 		{
 			*ident+=i; /* skip i characters in input */
 			printf("%s", substlistpos->subst);
