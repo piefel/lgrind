@@ -430,6 +430,50 @@ MLisp|Emacs Mock Lisp:\
 	:id=_-$#@./,%&?!^*+~`|;<>'\::\
 	:kw=defun if progn while:pl:px=\d\(defun:pb=^\d\(\p($|(\d\a$)):
 
+# The R system for statistical computing, also called "GNU S"
+# --dca 2004/02/19
+R:\
+	:id=.\$:\
+	:cb=#:\
+	:ce=$:\
+	:pb=(\d?"?\p"?\d?<-\d?)?function\d?\(:\
+	:sb=":\
+	:se=\e":\
+	:kw=if else repeat while function for in next break\
+	TRUE FALSE NULL NA Inf NaN:\
+	:bb={:\
+	:be=}:
+
+# A monstruously keyworded version of the above. May help browsing through
+# code for beginners. Commonly found keywords are included.
+# --dca 2004/02/19
+Rheavy:\
+	:id=.\$:\
+	:cb=#:\
+	:ce=$:\
+	:pb=(\d?"?\p"?\d?<-\d?)?function\d?\(:\
+	:sb=":\
+	:se=\e":\
+	:kw=.C .Call .External .Fortran .Internal .Options .Primitive\
+	FALSE NA TRUE abs ll any apply attr attributes\
+	as.character as.double as.factor as.integer\
+	as.list as.name as.string as.vector\
+	attach break c cat cbind class colnames data data.frame\
+	deparse detach dims dir else eval for format function\
+	get getwd grep gsub if ifelse in\
+	is.character is.factor is.function is.integer is.na is.nan is.null\
+	lapply length levels library list list.files ls\
+	match matrix max mean median min\
+	missing mode names next\
+	on.exit paste plot print prod quote range rep repeat require\
+	restart return rm rownames\
+	seq setwd show source\
+	str stop stopifnot storage.mode sub substitute sum switch\
+	tapply try typeof\
+	warning which while:\
+	:bb={:\
+	:be=}:
+
 SML/NJ:ML:\
 	:cb=\(\*:ce=\*\):\
 	:pb=fun:\
@@ -813,6 +857,7 @@ extensions:\
 	:l=lex:\
 	:k=kimwitu++:\
 	:py=python:
+ 	:r=R:R=R:
 
 # character substitution table
 chartab:\
